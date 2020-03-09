@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Complete KYC"
+        android:textSize="25sp"
+        app:fontFamily="sans-serif-light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout style="@style/TextInput.Base">
+
+                <EditText
+                    android:id="@+id/et_adhar_number"
+                    style="@style/EditText.BaseWidth"
+                    android:gravity="start"
+                    android:hint="Enter your Adhaar Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingBottom="16dp" />
+
+                <requestFocus />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInput.Base"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/et_pan_number"
+                    style="@style/EditText.BaseWidth"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:hint="Enter your PAN Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingBottom="16dp" />
+
+                <requestFocus />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInput.Base"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/et_driving_license"
+                    style="@style/EditText.BaseWidth"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:hint="Enter your Driving License Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingBottom="16dp" />
+
+                <requestFocus />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInput.Base"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/et_passport"
+                    style="@style/EditText.BaseWidth"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:hint="Enter your Passport Number"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingBottom="16dp" />
+
+                <requestFocus />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInput.Base"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/et_voter_id"
+                    style="@style/EditText.BaseWidth"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start"
+                    android:hint="Enter your Voter ID"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingBottom="16dp" />
+
+                <requestFocus />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_activate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

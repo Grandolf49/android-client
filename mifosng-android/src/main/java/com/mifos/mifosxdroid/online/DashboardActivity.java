@@ -10,7 +10,9 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import androidx.annotation.VisibleForTesting;
+
 import com.google.android.material.navigation.NavigationView;
+
 import androidx.test.espresso.IdlingResource;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -18,6 +20,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.widget.SwitchCompat;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -36,6 +39,7 @@ import com.mifos.mifosxdroid.online.createnewcenter.CreateNewCenterFragment;
 import com.mifos.mifosxdroid.online.createnewclient.CreateNewClientFragment;
 import com.mifos.mifosxdroid.online.createnewgroup.CreateNewGroupFragment;
 import com.mifos.mifosxdroid.online.groupslist.GroupsListFragment;
+import com.mifos.mifosxdroid.online.kyc.KYCFragment;
 import com.mifos.mifosxdroid.online.search.SearchFragment;
 import com.mifos.objects.user.User;
 import com.mifos.utils.Constants;
@@ -74,7 +78,8 @@ public class DashboardActivity extends MifosBaseActivity
 
         ButterKnife.bind(this);
 
-        replaceFragment(new SearchFragment(), false, R.id.container);
+        //replaceFragment(new SearchFragment(), false, R.id.container);
+        replaceFragment(new KYCFragment(), false, R.id.container);
 
         // setup navigation drawer and Navigation Toggle click and Offline Mode SwitchButton
         setupNavigationBar();
